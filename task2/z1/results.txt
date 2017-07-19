@@ -1,0 +1,215 @@
+Funkcje biblioteczne osiagaja lepsze czasy niz funkcje systemowe.
+
+GENERATE
+
+time ./main generate file.txt 1000 4
+real	0m0.010s
+user	0m0.001s
+sys	0m0.008s
+
+time ./main generate file.txt 1000 512
+real	0m0.510s
+user	0m0.000s
+sys	0m0.281s
+
+time ./main generate file.txt 1000 4096
+real	0m3.794s
+user	0m0.006s
+sys	0m2.027s
+
+time ./main generate file.txt 1000 8192
+real	0m7.502s
+user	0m0.013s
+sys	0m4.014s
+
+time ./main generate file.txt 2000 4
+real	0m0.042s
+user	0m0.001s
+sys	0m0.029s
+
+time ./main generate file.txt 2000 512
+real	0m0.957s
+user	0m0.003s
+sys	0m0.530s
+
+time ./main generate file.txt 2000 4096
+real	0m7.559s
+user	0m0.014s
+sys	0m4.052s
+
+time ./main generate file.txt 2000 8192
+real	0m15.088s
+user	0m0.017s
+sys	0m8.071s
+
+
+SHUFFLE SYS
+
+time ./main shuffle sys file.txt 1000 4
+real	0m0.021s
+user	0m0.002s
+sys	0m0.017s
+
+time ./main shuffle sys file.txt 1000 512
+real	0m0.038s
+user	0m0.000s
+sys	0m0.025s
+
+time ./main shuffle sys file.txt 1000 4096
+real	0m0.106s
+user	0m0.003s
+sys	0m0.038s
+
+time ./main shuffle sys file.txt 1000 8192
+real	0m0.035s
+user	0m0.001s
+sys	0m0.034s
+
+time ./main shuffle sys file.txt 2000 4
+real	0m0.006s
+user	0m0.000s
+sys	0m0.006s
+
+time ./main shuffle sys file.txt 2000 512
+real	0m0.009s
+user	0m0.001s
+sys	0m0.009s
+
+time ./main shuffle sys file.txt 2000 4096
+real	0m0.039s
+user	0m0.002s
+sys	0m0.036s
+
+time ./main shuffle sys file.txt 2000 8192
+real	0m0.139s
+user	0m0.001s
+sys	0m0.036s
+
+
+SHUFFLE LIB
+
+time ./main shuffle lib file.txt 1000 4
+real	0m0.008s
+user	0m0.001s
+sys	0m0.007s
+
+time ./main shuffle lib file.txt 1000 512
+real	0m0.007s
+user	0m0.001s
+sys	0m0.006s
+
+time ./main shuffle lib file.txt 1000 4096
+real	0m0.009s
+user	0m0.001s
+sys	0m0.007s
+
+time ./main shuffle lib file.txt 1000 8192
+real	0m0.010s
+user	0m0.002s
+sys	0m0.008s
+
+time ./main shuffle lib file.txt 2000 4
+real	0m0.017s
+user	0m0.004s
+sys	0m0.014s
+
+time ./main shuffle lib file.txt 2000 512
+real	0m0.019s
+user	0m0.004s
+sys	0m0.015s
+
+time ./main shuffle lib file.txt 2000 4096
+real	0m0.026s
+user	0m0.006s
+sys	0m0.019s
+
+time ./main shuffle lib file.txt 2000 8192
+real	0m0.046s
+user	0m0.004s
+sys	0m0.041s
+
+
+SORT SYS
+
+time ./main sort sys file.txt 1000 4
+real	0m1.146s
+user	0m0.107s
+sys	0m1.037s
+
+time ./main sort sys file.txt 1000 512
+real	0m1.314s
+user	0m0.106s
+sys	0m1.199s
+
+time ./main sort sys file.txt 1000 4096
+real	0m1.578s
+user	0m0.103s
+sys	0m1.471s
+
+time ./main sort sys file.txt 1000 8192
+real	0m2.755s
+user	0m0.132s
+sys	0m2.604s
+
+time ./main sort sys file.txt 2000 4
+real	0m4.298s
+user	0m0.391s
+sys	0m3.902s
+
+time ./main sort sys file.txt 2000 512
+real	0m4.678s
+user	0m0.430s
+sys	0m4.241s
+
+time ./main sort sys file.txt 2000 4096
+real	0m5.365s
+user	0m0.350s
+sys	0m5.005s
+
+time ./main sort sys file.txt 2000 8192
+real	0m9.915s
+user	0m0.390s
+sys	0m9.504s
+
+
+SORT LIB
+
+time ./main sort lib file.txt 1000 4
+real	0m0.928s
+user	0m0.210s
+sys	0m0.717s
+
+time ./main sort lib file.txt 1000 512
+real	0m1.048s
+user	0m0.205s
+sys	0m0.838s
+
+time ./main sort lib file.txt 1000 4096
+real	0m1.427s
+user	0m0.244s
+sys	0m1.177s
+
+time ./main sort lib file.txt 1000 8192
+real	0m2.315s
+user	0m0.267s
+sys	0m2.044s
+
+time ./main sort lib file.txt 2000 4
+real	0m2.815s
+user	0m0.701s
+sys	0m2.110s
+
+time ./main sort lib file.txt 2000 512
+real	0m3.346s
+user	0m0.820s
+sys	0m2.514s
+
+time ./main sort lib file.txt 2000 4096
+real	0m5.615s
+user	0m0.852s
+sys	0m4.752s
+
+time ./main sort lib file.txt 2000 8192
+real	0m9.868s
+user	0m1.010s
+sys	0m8.825s
